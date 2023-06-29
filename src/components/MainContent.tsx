@@ -1,11 +1,28 @@
+import { title } from "process";
 import FixedEntry from "./FixedEntry";
 import JournalEntry from "./JournalEntry";
 
 function MainContent(): JSX.Element {
   return (
     <main>
-      <FixedEntry />
-      <FixedEntry />
+      <JournalEntry
+       title={"Title goes here"}
+       tags={["tags", "go", "here"]}
+       body={"Here is where we would put the body of the post"}
+       views={0}
+       likes={0}
+       postDate={{month: "July", day: 29, year: 2023 }}
+      />
+      
+      <JournalEntry
+       title={"Title goes here"}
+       tags={["tags", "go", "here"]}
+       body={"Here is where we would put the body of the post"}
+       views={0}
+       likes={0}
+       postDate={{month: "July", day: 29, year: 2023 }}
+      />
+      
       <JournalEntry
         title={"Discovering React components"}
         tags={["react", "components", "reusability"]}
